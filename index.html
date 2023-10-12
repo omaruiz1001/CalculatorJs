@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <h1>Calculadora Js <br> Omar Ruiz</h1>
+    <div class="container">
+      <div>
+        <input type="text" class="pantalla" id="pantalla" readonly />
+        <div>
+          <input type="button" value="1" onclick="mostrar('1')"/>
+          <input type="button" value="2" onclick="mostrar('2')"/>
+          <input type="button" value="3" onclick="mostrar('3')"/>
+          <input type="button" value="+" onclick="mostrar('+')"/>
+        </div>
+        <div>
+          <input type="button" value="4" onclick="mostrar('4')"/>
+          <input type="button" value="5" onclick="mostrar('5')"/>
+          <input type="button" value="6" onclick="mostrar('6')"/>
+          <input type="button" value="-" onclick="mostrar('-')"/>
+        </div>
+        <div>
+          <input type="button" value="7" onclick="mostrar('7')"/>
+          <input type="button" value="8" onclick="mostrar('8')"/>
+          <input type="button" value="9" onclick="mostrar('9')"/>
+          <input type="button" value="*" onclick="mostrar('*')"/>
+        </div>
+        
+        <div>
+          <input type="button" value="0" onclick="mostrar('0')"/>
+          <input type="button" value="." onclick="mostrar('.')"/>
+          <input type="button" value="/" onclick="mostrar('/')"/>
+          <input type="button" value="=" id="resultado" onclick="result()" />
+        </div>
+        
+        <div>
+          <input type="button" value="C" id="refrescar" onclick="refresh()"/>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
